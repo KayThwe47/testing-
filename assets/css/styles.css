@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  margin: 3rem 0 0 0;
+  padding: 0 1rem;
+  font-size: 16px;
+  transition: .5s;
+  background-color: #F1F6FA; }
+
+a {
+  text-decoration: none !important; }
+
+/*===== HEADER =====*/
+.header {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: #fff;
+  z-index: 100;
+  transition: .5s; }
+  .header_toggle {
+    color: #0b39b9;
+    font-size: 1.5rem;
+    cursor: pointer; }
+  .header_img {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #0b39b9; }
+    .header_img img {
+      width: 40px; }
+
+/*===== navbar =====*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -30%;
+  width: 68px;
+  height: 100vh;
+  background-color: #fff;
+  padding: 8px 16px 0 0;
+  transition: .5s;
+  z-index: 100; }
+
+.nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; }
+  .nav_logo, .nav_link {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 16px;
+    padding: 8px 0 8px 24px; }
+  .nav_logo {
+    margin-bottom: 32px; }
+    .nav_logo-icon {
+      color: #0b39b9;
+      width: 28px; }
+    .nav_logo-name {
+      color: #0b39b9;
+      font-weight: 700;
+      font-size: 22px; }
+  .nav_link {
+    position: relative;
+    color: #0b39b9;
+    margin-bottom: 1.5rem;
+    transition: .3s; }
+    .nav_link:hover {
+      color: #597ad6; }
+  .nav_icon {
+    font-size: 1.25rem; }
+
+/*Show navbar in mobile view*/
+.show {
+  left: 0; }
+
+/*Add padding body in  mobile view*/
+.body-pd {
+  padding-left: 84px; }
+
+/*Active links*/
+.active {
+  color: #0b39b9; }
+
+/* Content */
+section {
+  padding-top: 30px; }
+
+/* testing color */
+.text {
+  color: #0b39b9; }
+
+.card {
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(45deg, #6d80fe 0%, #23d2fd 100%); }
+
+.card-two {
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(45deg, #09afe8 0%, #29f499 100%); }
+
+.card-three {
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(45deg, #0b39b9 0%, #8ed7f0 100%); }
+
+/* end */
+/* ===== media queries=====*/
+@media screen and (min-width: 768px) {
+  body {
+    margin: 64px 0 0 0;
+    padding-left: 256px; }
+
+  .header {
+    height: 64px;
+    padding: 0 32px 0 250px; }
+    .header_img {
+      width: 40px;
+      height: 40px; }
+      .header_img img {
+        width: 45px; }
+
+  .navbar {
+    left: 0;
+    padding: 8px 16px 0 0;
+    width: 224px; }
+
+  /* == Show navbar desktop ===*/
+  .show {
+    width: 68px; }
+
+  /* === Add padding body desktop === */
+  .body-pd {
+    padding-left: 100px; } }
+
+/*# sourceMappingURL=styles.css.map */
